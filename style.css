@@ -132,23 +132,24 @@ a:hover {
 
 
 .container {
-    padding: 0 20px;
+    padding: 0 12px;
 }
 
 /* logo */
 .social-sec {
-    padding: 20px 0 50px;
-    position: relative;
     overflow: hidden;
     z-index: 1;
 }
 
+.social-sec-top-flex {
+  padding: 7px 0;
+}
+
 .image-overlay {
     position: absolute;
-    top: -35%;
-    right: -50px;
+    top: 0;
+    right: 0;
     width: 100%;
-    height: 100%;
     pointer-events: none;
     user-select: none;
     z-index: -1;
@@ -156,8 +157,7 @@ a:hover {
 
 .logo-link {
     display: inline-block;
-    max-width: 90px;
-    margin-bottom: 50px;
+    max-width: 80px;
 }
 .social-sec-wrap span {
     display: block;
@@ -174,9 +174,11 @@ a:hover {
     color: var(--bg-light-green);
 }
 .social-all-items {
-    background-color: #0F714A;
-    padding: 20px 0;
+    background-color: #1e1f21;
+    padding: 40px 0 20px;
     min-height: 100vh;
+    position: relative;
+    z-index: 1;
     border-radius: 25px 25px 0 0;
 }
 .social-all-items-wrap {
@@ -186,7 +188,7 @@ a:hover {
     margin-bottom: 0px;
 }
 .social-all-items-wrap label {
-    color: #ffffffe8;
+    color: #fff;
     font-size: 18px;
     text-transform: capitalize;
 }
@@ -233,7 +235,7 @@ a:hover {
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: var(--bg-white);
+    background-color: #fff36f;
     opacity: 0.6;
 }
 
@@ -252,4 +254,72 @@ a:hover {
 }
 .social-item-col-cont {
     min-height: 70px;
+}
+
+.social-sec-top-flex {
+  background-color: #1e1f21;
+}
+
+.social-sec-wrap {
+  padding: 50px 0 70px;
+  position: relative;
+  z-index: 1;
+}
+.btn {
+  background-color: #fff36f;
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 10px;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.btn::after {
+  content: " \f095 ";
+  font-family: 'fontawesome';
+  position: absolute;
+  top: 0;
+  left: -47px;
+  font-size: 17px;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: #fff36f;
+  z-index: -1;
+  -webkit-transition: all 0.4s ease;
+}
+
+.btn span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.social-sec-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-all-items .image-overlay {
+  opacity: 0.4;
+}
+
+.footer-sec {
+  background-color: #232527;
+}
+
+.footer-sec span {
+  font-size: 12px;
+  color: var(--bg-light);
+  padding: 13px 0;
+  display: block;
+  text-align: center;
 }
