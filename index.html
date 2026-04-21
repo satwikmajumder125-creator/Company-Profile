@@ -13,6 +13,7 @@
 	<!-- Open Graph / Facebook -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
@@ -76,13 +77,13 @@
                 <label class="cmn-hd">Follow Us</label>
                 <div class="social-item-dlex">
                     <div class="social-item-col">
-                        <a href="#" class="social-item-col-box">
+                        <a data-fancybox data-src="#popup-form" href="javascript:;" class="social-item-col-box">
                             <div class="social-item-col-icon">
                                 <img src="images/facebook.png" alt="">
                             </div>
                             <div class="social-item-col-cont">
                                 <h3>Facebook</h3>
-                            <p>Join our community</p>
+                                <p>Join our community</p>
                             </div>
                             <img src="images/right-arrow.png" class="icon-right" alt="">
                         </a>
@@ -136,7 +137,7 @@
                             </div>
                             <div class="social-item-col-cont">
                                 <h3>TiCi NatureLab</h3>
-                            <p>www.ticinaturelab.com</p>
+                            <p class="txt-wrap">www.ticinaturelab.com</p>
                             </div>
                             <img src="images/right-arrow.png" class="icon-right" alt="">
                         </a>
@@ -148,7 +149,7 @@
                             </div>
                             <div class="social-item-col-cont">
                                 <h3>TiCi Nature Academy</h3>
-                            <p>www.ticinatureacademy.org</p>
+                            <p class="txt-wrap">www.ticinatureacademy.org</p>
                             </div>
                             <img src="images/right-arrow.png" class="icon-right" alt="">
                         </a>
@@ -165,7 +166,7 @@
                             </div>
                             <div class="social-item-col-cont">
                                 <h3>General Inquiries</h3>
-                            <p>sales@ticinaturelab.com</p>
+                            <p class="txt-wrap">sales@ticinaturelab.com</p>
                             </div>
                             <img src="images/right-arrow.png" class="icon-right" alt="">
                         </a>
@@ -177,7 +178,7 @@
                             </div>
                             <div class="social-item-col-cont">
                                 <h3>Academy Programs</h3>
-                            <p>academy@ticilifescience.com</p>
+                            <p class="txt-wrap">academy@ticilifescience.com</p>
                             </div>
                             <img src="images/right-arrow.png" class="icon-right" alt="">
                         </a>
@@ -214,9 +215,19 @@
     <div class="footer-sec">
         <span>© 2025 TiCi NatureLab Group. All Rights Reserved.</span>
     </div>
-  
+    <!-- popup -->
+     <div id="popup-form" class="pop-all">
+        <div class="popup-link-wrap">
+            <a href="#"><span><img src="images/fb-round.png" alt=""></span> TiCi Nature Academy</a>
+            <a href="#"><span><img src="images/fb-round.png" alt=""></span> TiCi Nature Lab</a>
+        </div>
+                        <img src="images/blk-img.png" class="image-overlay" alt="">
+    </div>
+    <!-- popup end -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="custom.js"></script>
+    
   </body>
 </html>

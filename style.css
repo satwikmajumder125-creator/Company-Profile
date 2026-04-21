@@ -175,7 +175,7 @@ a:hover {
 }
 .social-all-items {
     background-color: #1e1f21;
-    padding: 40px 0 20px;
+    padding: 40px 0;
     min-height: 100vh;
     position: relative;
     z-index: 1;
@@ -199,10 +199,23 @@ a:hover {
 }
 .social-item-col {
     background-color: var(--bg-white);
+    overflow: hidden;
     border-radius: 10px;
     position: relative;
-    padding: 16px;
-    min-height: 180px;
+    padding: 11px;
+    min-height: 170px;
+    border: 3px solid #fff36f;
+}
+
+.social-item-col::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #fff36f;
+  clip-path: circle(69.4% at 70% 30%);
 }
 
 .social-item-col-icon {
@@ -214,12 +227,12 @@ a:hover {
 .social-item-col-box h3 {
     font-size: 17px;
     margin: 0 0 10px;
+    line-height: 1.2;
 }
 
 .social-item-col-box p {
     color: var(--bg-light);
     font-size: 12px;
-    word-break: break-all;
     margin: 0;
 }
 .cmn-hd {
@@ -236,7 +249,6 @@ a:hover {
     width: 60px;
     height: 3px;
     background-color: #fff36f;
-    opacity: 0.6;
 }
 
 .icon-right {
@@ -253,7 +265,7 @@ a:hover {
     position: relative;
 }
 .social-item-col-cont {
-    min-height: 70px;
+    min-height: 60px;
 }
 
 .social-sec-top-flex {
@@ -322,4 +334,62 @@ a:hover {
   padding: 13px 0;
   display: block;
   text-align: center;
+}
+
+.txt-wrap {
+  word-break: break-all;
+}
+
+.pop-all {
+  display: none;
+  width: 100%;
+  padding: 35px 25px 25px;
+  background-color: #fff36f;
+  z-index: 1;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+    color: #fff;
+    padding: 2px;
+    right: 8px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    background: #272727;
+    opacity: 1;
+    border-radius: 100%;
+}
+
+.popup-link-wrap a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--bg-white);
+    border-radius: 5px;
+    text-transform: uppercase;
+    background: var(--bg-body-color);
+    padding: 10px;
+    box-shadow: 0 0 10px #33333354;
+    margin: 5px 0;
+    position: relative;
+}
+
+.popup-link-wrap a::after {
+  content: '\f054';
+  font-family: 'fontawesome';
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  font-size: 11px;
+  transform: translate(0%, -50%);
+  color: var(--bg-white);
+}
+
+.popup-link-wrap a span {
+    display: inline-block;
+    max-width: 23px;
 }
