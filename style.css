@@ -205,8 +205,8 @@ a:hover {
     border-radius: 10px;
     position: relative;
     padding: 11px;
-    min-height: 170px;
-    border: 2px solid #fff36f;
+    min-height: 160px;
+    border: 1px solid #fff36f;
 }
 
 .social-item-col::before {
@@ -214,28 +214,29 @@ a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #fff36f;
-  clip-path: circle(69.4% at 70% 30%);
+    border-radius: 0 0 0 23px;
 }
 
 .social-item-col-icon {
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     margin-bottom: 20px;
 }
 
 .social-item-col-box h3 {
     font-size: 14px;
-    margin: 0 0 7px;
+    margin: 0 0 5px;
     line-height: 1.2;
+    letter-spacing: 1px;
     color: var(--bg-white);
 }
 
 .social-item-col-box p {
     color: var(--bg-white);
-    font-size: 12px;
+    font-size: 10px;
     margin: 0;
       display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -262,7 +263,7 @@ a:hover {
 .icon-right {
     position: absolute;
     top: 0;
-    max-width: 20px;
+max-width: 17px;
     right: 0;
 }
 .social-item-col-box {
@@ -271,9 +272,6 @@ a:hover {
     justify-content: space-between;
     height: 100%;
     position: relative;
-}
-.social-item-col-cont {
-    min-height: 60px;
 }
 
 .social-sec-top-flex {
